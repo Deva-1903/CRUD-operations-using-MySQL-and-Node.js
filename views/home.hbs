@@ -1,0 +1,28 @@
+<h1>Customers</h1>
+
+<p><a href="/addcustomer" class="addbtn">Add Customer</a></p>
+
+<table>
+    <thead>
+        <tr>
+            <td>Login ID</td>
+            <td>Name</td>
+            <td>Phone</td>
+            <td>Edit</td>
+            <td>Delete</td>
+            <td>Invoices</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+        <tr>
+            <td>{{this.LOGIN_ID}}</td>
+            <td>{{this.NAME}}</td>
+            <td>{{this.PHONE}}</td>
+            <td><a class="edit" href="/editcustomer/{{this.ID}}">Edit</a></td>
+            <td><a onclick="return confirm('Are you sure?')" class="delete" href="/deletecustomer/{{this.ID}}">Delete</a></td>
+            <td><a class="invoice" href="/userdetails">Invoices</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
