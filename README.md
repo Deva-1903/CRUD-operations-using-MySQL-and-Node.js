@@ -1,2 +1,2 @@
-Tech used: Node.js, MySQL
-To run it on your system change environment variables to you sql credentials.
+Tech used: Node.js, Express, MySQL
+
