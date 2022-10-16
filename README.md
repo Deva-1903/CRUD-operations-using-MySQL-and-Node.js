@@ -1,2 +1,2 @@
-Tech used: Node.js, Express, MySQL
+CRUD-operations-using-MySQL-and-Node.js
 
